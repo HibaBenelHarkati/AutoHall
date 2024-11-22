@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="container">
+        <img class="logo mb-4" src="{% static 'images/logo.png' %}" width="50" height="50" alt="Logo">
+        <form method="POST">
+            {% csrf_token %}
+            {{ register_form }}
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+{% endblock %}

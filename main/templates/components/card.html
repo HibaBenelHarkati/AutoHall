@@ -1,0 +1,23 @@
+<div class="shadow p-3 mb-5 bg-white rounded">
+     <img class="card-img-top" src={{i.image.url}} alt="Card image cap">
+     <div class="card-body">
+          <p class="card-text" style="font-weight:bold;">{{i.brand}}</p>
+          <div class="col-1" style="display: flex; align-items: center;">
+               <img src="{{i.seller.photo.url}}" class="rounded-circle" height="30" width="30">
+               <p class="card-text"  style="padding-left:10px">{{i.seller.user.username}}</p>
+          </div>
+     </div>
+     <br>
+          <p class="card-text">{{i.description}}</p>
+     </br>
+     <div  style="display: flex; align-items: center">
+          {% if i.seller.user == request.user %}
+               <button type="button" class="btn btn-outline-dark">
+                    <a type="button" href="{% url 'edit' id=i.id %}">
+                         Editer
+                    </a>
+               </button>
+          {% endif %}
+     </div>
+     <small class="text-muted" >{{i.updated_at}}</small>
+</div>

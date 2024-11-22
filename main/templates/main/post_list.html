@@ -1,0 +1,63 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="d-flex h-100 text-center text-white index">
+        <video autoplay muted loop id="bgVideo">
+            <source src="{% static 'videos/bg.mp4' %}" type="video/mp4">
+        </video>
+        <div class="d-flex text-white w-100">
+            <header class="w-100">
+                <h3><b>AutoHall</b></h3>
+                <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" >
+                    <div class="navbar-collapse" id="navbarColor02">
+                      <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="{% url 'login' %}">Login</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <h1> Bonne affaire chez vous!</h1>
+                <p class="lead"><strong>Cherhez-vous a vendre ou acheter une voiture bonne occasion? Vous etes sur le bon endroit!</strong></p>
+                <p class="lead">
+                    <a href="{% url 'register' %}" ><button type="button" class="btn btn-dark"><strong>Register</strong></button></a>
+                </p>
+            </main>
+        </div>
+    </div>
+    <style>
+        #bgVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+    </style>
+{% endblock %}
+
+
+
+{% block footer %}
+    <footer class="mt-auto text-white-50">
+        <div class="container">
+            <p>Copyright 2024 <a href="" class="text-white"> AutoHall</a> by
+            <a class="text-white"> Preneure.com</a></p>
+        </div>
+    </footer>
+{% endblock %}
