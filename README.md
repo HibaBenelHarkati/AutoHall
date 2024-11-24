@@ -10,7 +10,7 @@
 
 
 ## Liens utiles et outils de développement :
-
+ces ressources m'ont aidé pour mettre en oeuvre la structire et le contenu de ma page web
 - [UUID dans Django](https://stackoverflow.com/questions/32528224/how-to-use-uuid)
 - [Caractéristiques importantes d'une voiture](https://www.quora.com/What-are-the-most-important-characteristics-of-a-car)
 - [Gestion des fichiers dans Django](https://docs.djangoproject.com/en/5.1/topics/files/)
