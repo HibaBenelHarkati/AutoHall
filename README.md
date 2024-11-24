@@ -5,7 +5,7 @@
 ## Fonctionnalités principales
 - Publier des annonces de voitures
 - Gérer les utilisateurs et leurs profils et leurs localisations
-- Modifier des annonces  grâce à Django
+- Modifier des annonces  grâce à Django et qlq outils incluses tq la creation des forms et crispy pour le front
 - Interface utilisateur moderne et responsive grâce à Bootstrap
 
 
