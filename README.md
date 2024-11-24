@@ -1,12 +1,12 @@
 # AutoHall 🚘
 
-**AutoHall** est un site web de vente de voitures, avec des fonctionnalités pour la gestion des utilisateurs. Ce projet est développé avec **Django** et met l'accent sur une interface intuitive et des outils puissants pour les utilisateurs.
+**AutoHall** est un site web de vente de voitures, avec des fonctionnalités pour la gestion des utilisateurs. Ce projet est développé avec **Django** et met l'accent sur une interface intuitive et des outils puissants pour les utilisateurs
 
 ## Fonctionnalités principales
-- Publier des annonces de voitures.
-- Gérer les utilisateurs et leurs profils.
-- Modifier ou supprimer des annonces.
-- Interface utilisateur moderne et responsive grâce à **Bootstrap**.
+- Publier des annonces de voitures
+- Gérer les utilisateurs et leurs profils et leurs localisations
+- Modifier des annonces  grâce à Django
+- Interface utilisateur moderne et responsive grâce à Bootstrap
 
 ---
 
